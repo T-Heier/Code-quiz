@@ -1,0 +1,12 @@
+Start button
+starts a timer and shows the first question
+timer counts down as you continue to finish the questions.
+when you answer questions incorrectly, apply a time remaining penalty
+
+questions will have multiple choice answers (4 seperate buttons?)
+questions will be in a random order each time you start the quiz
+5 questions to complete the quiz
+highscore will be your time remaining
+
+highscore table using local memory to see previous attempts
+clear high score button to clear local memory
