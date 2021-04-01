@@ -1,0 +1,21 @@
+
+
+
+.hide {
+    display: none;
+}
+
+#startScreen {
+    
+}
+
+#highscore {
+    display: flex;
+    flex-direction: row;
+}
+
+#timer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
