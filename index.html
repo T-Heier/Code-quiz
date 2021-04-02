@@ -4,33 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- header displaying the high score button and countdown timer -->
-    <header>
+    <header class="nav navbar-light bg-light">
       <h3 id="highscore">View Highscores</h3>
       <h3 id="time">Time:</h3>
     </header>
-    <main id="startScreen">
+    <main class="container" id="startScreen">
       <h1>Javascript Coding Quiz</h1>
-      <p>
+        <p>
         Click the start button to begin! Try to answer the questions as fast as
         possible to get a highscore!
-      </p>
+        </p>
       <!-- this will start the quiz and hopefully hide the startscreen -->
-      <button type="button" id="start-button">Start!</button>
+      <button type="button" class="btn btn-primary" id="start-button">Start!</button>
     </main>
-      <div class="hide" id="quizstart">
-        <h2 id="quizquestion"></h2>
-        <div id="choices"></div>
-      </div>
-    
+    <div class="hide container" id="quizstart">
+      <h2 id="quizquestion"></h2>
+      <div id="choices"></div>
+    </div>
+    <!-- screen that displays once you finish the quiz -->
+    <div id="highscore-screen" class="hide">
+      <h1>
+        Success!
+        <p id="dumbscore">You completed the quiz! Your score is </p>
+        <form>
+          <label>Enter Initials</label>
+          <input id="imright" type="text"/>
+          <button type="button" id="submitButton">Don't Click</button>
+        </form>
+      </h1>
+    </div>
 
-  
     <script src="./assets/questions.js"></script>
     <script src="./assets/script.js"></script>
-    
   </body>
 </html>
